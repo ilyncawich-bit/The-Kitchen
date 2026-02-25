@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Margarita</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Oswald:wght@500&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <style>
+        body { font-size: 18px; background-color: #f1f8e9; margin: 0; color: #1b5e20; font-family: 'Arial', sans-serif; display: flex; }
+        h1 { font-family: 'Dancing Script', cursive; color: #f9fbe7; border: 8px double #388e3c; background-color: #66bb6a; padding: 25px; border-radius: 15px; text-align: center; font-size: 50px; }
+        h2 { font-family: 'Oswald', sans-serif; color: #f9fbe7; background: #81c784; padding: 12px; border-radius: 8px; text-align: center; border: 2px solid #388e3c; letter-spacing: 2px; text-transform: uppercase; }
+        p { font-family: 'Playfair Display', serif; font-style: italic; text-align: center; line-height: 1.6; color: #2e7d32; font-size: 24px; padding: 0 40px; }
+        .menu { width: 240px; background-color: #2e7d32; position: fixed; height: 100%; box-shadow: 4px 0 15px rgba(0,0,0,0.1); overflow-y: auto; }
+        .menu ul { list-style-type: none; padding: 0; margin: 0; }
+        .category { cursor: pointer; padding: 15px 25px; display: block; color: #d4af37; font-family: 'Oswald', sans-serif; font-size: 18px; text-transform: uppercase; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        .submenu { max-height: 0; overflow: hidden; transition: max-height 0.4s ease-out; background-color: rgba(0,0,0,0.2); }
+        .category-wrapper:hover .submenu { max-height: 200px; }
+        .submenu li a { display: block; color: #fff; padding: 12px 40px; text-decoration: none; font-size: 16px; transition: 0.3s; }
+        .submenu li a:hover { background-color: rgba(255,255,255,0.1); padding-left: 50px; }
+        .home-link { display: block; background-color: #1b5e20; color: white; padding: 20px; text-align: center; font-family: 'Oswald', sans-serif; text-decoration: none; text-transform: uppercase; }
+        .content { margin-left: 260px; padding: 50px; max-width: 900px; }
+        .centered-img { width: 450px; height: auto; border: 12px solid white; border-radius: 20px; display: block; margin: 35px auto; box-shadow: 0 15px 35px rgba(0,0,0,0.15); }
+        .ingredients-list { list-style: none; padding: 0; }
+        .ingredients-list li { padding: 10px 0; border-bottom: 1px dashed #a5d6a7; }
+        .ingredients-list li::before { content: "\1F378  "; margin-right: 12px; }
+    </style>
+</head>
+<body>
+    <nav class="menu">
+        <a href="Index.html" class="home-link">Home</a>
+        <ul>
+            <li class="category-wrapper"><span class="category">Beverages</span><ul class="submenu"><li><a href="Margarita.html">Margarita</a></li><li><a href="strawberry.html">Strawberry Colada</a></li></ul></li>
+            <li class="category-wrapper"><span class="category">Main Dishes</span><ul class="submenu"><li><a href="pasta.html">Shrimp Alfredo</a></li><li><a href="lasagna.html">Lasagna</a></li></ul></li>
+            <li class="category-wrapper"><span class="category">Desserts</span><ul class="submenu"><li><a href="cheescake.html">Oreo Cheesecake</a></li><li><a href="cake.html">Tres Leches</a></li></ul></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <h1>Classic Cuervo® Margarita</h1>
+        <p>A sophisticated blend of tart citrus and earthy agave, creating the ultimate refreshing escape in a glass.</p>
+        <img src="Margarita.jpg" class="centered-img">
+        <h2>Ingredients</h2>
+        <ul class="ingredients-list">
+            <li>2 oz Cuervo Tradicional® Blanco Tequila</li>
+            <li>1 oz Freshly squeezed lime juice</li>
+            <li>1 oz Triple Sec or Cointreau</li>
+            <li>1/2 oz Agave nectar</li>
+            <li>Coarse sea salt for the rim</li>
+        </ul>
+        <h2>Instructions</h2>
+        <ol>
+            <li>Rub a lime wedge around the rim of your glass and dip in salt.</li>
+            <li>Combine tequila, lime juice, liqueur, and agave in a shaker with ice.</li>
+            <li>Shake vigorously for 15 seconds until the shaker is frosted.</li>
+            <li>Strain into the prepared glass over fresh ice and garnish with a lime wheel.</li>
+        </ol>
+    </div>
+</body>
+</html>

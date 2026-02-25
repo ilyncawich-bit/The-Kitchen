@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Strawberry Colada</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Oswald:wght@500&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <style>
+        body { font-size: 18px; background-color: #fff1f2; margin: 0; color: #9d174d; font-family: 'Arial', sans-serif; display: flex; }
+        h1 { font-family: 'Dancing Script', cursive; color: #fff; border: 5px solid #be185d; background-color: #f472b6; padding: 25px; border-radius: 50px 5px; text-align: center; font-size: 50px; }
+        h2 { font-family: 'Oswald', sans-serif; color: #fff; background: #fb7185; padding: 12px; text-align: center; border: 3px solid #db2777; border-radius: 10px; letter-spacing: 2px; text-transform: uppercase; }
+        p { font-family: 'Playfair Display', serif; font-style: italic; text-align: center; line-height: 1.8; font-size: 22px; padding: 0 40px; color: #db2777; }
+        .menu { width: 240px; background-color: #9d174d; position: fixed; height: 100%; box-shadow: 4px 0 15px rgba(0,0,0,0.1); overflow-y: auto; }
+        .menu ul { list-style-type: none; padding: 0; margin: 0; }
+        .category { cursor: pointer; padding: 15px 25px; display: block; color: #fbcfe8; font-family: 'Oswald', sans-serif; font-size: 18px; text-transform: uppercase; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        .submenu { max-height: 0; overflow: hidden; transition: max-height 0.4s ease-out; background-color: rgba(0,0,0,0.2); }
+        .category-wrapper:hover .submenu { max-height: 200px; }
+        .submenu li a { display: block; color: white; padding: 12px 40px; text-decoration: none; font-size: 16px; transition: 0.3s; }
+        .submenu li a:hover { background-color: rgba(255,255,255,0.1); padding-left: 50px; }
+        .home-link { display: block; background-color: #701137; color: white; padding: 20px; text-align: center; font-family: 'Oswald', sans-serif; text-decoration: none; text-transform: uppercase; }
+        .content { margin-left: 260px; padding: 50px; }
+        .centered-img { width: 450px; border-radius: 30px; border: 10px solid #fff; display: block; margin: 30px auto; box-shadow: 0 10px 30px rgba(0,0,0,0.1); }
+        .ingredients-list { list-style: none; padding: 0; }
+        .ingredients-list li { padding: 8px 0; border-bottom: 1px solid #f9a8d4; }
+        .ingredients-list li::before { content: "\1F353  "; margin-right: 12px; }
+    </style>
+</head>
+<body>
+    <nav class="menu">
+        <a href="Index.html" class="home-link">Home</a>
+        <ul>
+            <li class="category-wrapper"><span class="category">Beverages</span><ul class="submenu"><li><a href="Margarita.html">Margarita</a></li><li><a href="strawberry.html">Strawberry Colada</a></li></ul></li>
+            <li class="category-wrapper"><span class="category">Main Dishes</span><ul class="submenu"><li><a href="pasta.html">Shrimp Alfredo</a></li><li><a href="lasagna.html">Lasagna</a></li></ul></li>
+            <li class="category-wrapper"><span class="category">Desserts</span><ul class="submenu"><li><a href="cheescake.html">Oreo Cheesecake</a></li><li><a href="cake.html">Tres Leches</a></li></ul></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <h1>Strawberry Colada</h1>
+        <p>A luscious, frozen fusion of sun-ripened strawberries and creamy Caribbean coconut milk.</p>
+        <img src="Strawberry.jpg" class="centered-img">
+        <h2>Ingredients</h2>
+        <ul class="ingredients-list">
+            <li>2 oz White Rum</li>
+            <li>1 1/2 cups Frozen strawberries</li>
+            <li>3 oz Cream of coconut</li>
+            <li>2 oz Pineapple juice</li>
+        </ul>
+        <h2>Instructions</h2>
+        <ol>
+            <li>Place all ingredients into a high-speed blender.</li>
+            <li>Add a handful of ice and blend until completely smooth.</li>
+            <li>Pour into a tall chilled glass and garnish with a fresh strawberry.</li>
+        </ol>
+    </div>
+</body>
+</html>

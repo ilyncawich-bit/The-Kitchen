@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lasagna</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Oswald:wght@500&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <style>
+        body { font-size: 18px; background-color: #fffaf0; margin: 0; color: #444; display: flex; font-family: 'Arial', sans-serif; }
+        h1 { font-family: 'Dancing Script', cursive; color: #fff; border: 6px solid #8b0000; background-color: #b22222; padding: 25px; text-align: center; font-size: 50px; }
+        h2 { font-family: 'Oswald', sans-serif; color: #fff; background: #b22222; padding: 12px; text-align: center; border: 2px solid #8b0000; letter-spacing: 2px; text-transform: uppercase; }
+        p { font-family: 'Playfair Display', serif; font-style: italic; text-align: center; font-size: 24px; color: #b22222; padding: 0 40px; }
+        .menu { width: 240px; background-color: #8b0000; position: fixed; height: 100%; box-shadow: 4px 0 15px rgba(0,0,0,0.1); overflow-y: auto; }
+        .menu ul { list-style-type: none; padding: 0; margin: 0; }
+        .category { cursor: pointer; padding: 15px 25px; display: block; color: #ffebcd; font-family: 'Oswald', sans-serif; font-size: 18px; text-transform: uppercase; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        .submenu { max-height: 0; overflow: hidden; transition: max-height 0.4s ease-out; background-color: rgba(0,0,0,0.2); }
+        .category-wrapper:hover .submenu { max-height: 200px; }
+        .submenu li a { display: block; color: #ffebcd; padding: 12px 40px; text-decoration: none; font-size: 16px; transition: 0.3s; }
+        .submenu li a:hover { background-color: rgba(255,255,255,0.1); padding-left: 50px; }
+        .home-link { display: block; background-color: #5a0000; color: white; padding: 20px; text-align: center; font-family: 'Oswald', sans-serif; text-decoration: none; text-transform: uppercase; }
+        .content { margin-left: 260px; padding: 50px; }
+        .centered-img { width: 480px; border: 12px solid #fff; outline: 1px solid #ccc; display: block; margin: 30px auto; }
+        .ingredients-list { list-style: none; padding: 0; }
+        .ingredients-list li { padding: 8px 0; border-bottom: 1px solid #ffccbc; }
+        .ingredients-list li::before { content: "\1F35B  "; margin-right: 12px; }
+    </style>
+</head>
+<body>
+    <nav class="menu">
+        <a href="Index.html" class="home-link">Home</a>
+        <ul>
+            <li class="category-wrapper"><span class="category">Beverages</span><ul class="submenu"><li><a href="Margarita.html">Margarita</a></li><li><a href="strawberry.html">Strawberry Colada</a></li></ul></li>
+            <li class="category-wrapper"><span class="category">Main Dishes</span><ul class="submenu"><li><a href="pasta.html">Shrimp Alfredo</a></li><li><a href="lasagna.html">Lasagna</a></li></ul></li>
+            <li class="category-wrapper"><span class="category">Desserts</span><ul class="submenu"><li><a href="cheescake.html">Oreo Cheesecake</a></li><li><a href="cake.html">Tres Leches</a></li></ul></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <h1>Rustic Classic Lasagna</h1>
+        <p>A towering masterpiece of slow-cooked meat ragu, herb-infused ricotta, and sheets of golden pasta.</p>
+        <img src="Lasagna.jpg" class="centered-img">
+        <h2>Ingredients</h2>
+        <ul class="ingredients-list">
+            <li>12 Lasagna noodles</li>
+            <li>1 lb Ground beef</li>
+            <li>15 oz Ricotta cheese</li>
+            <li>3 cups Shredded Mozzarella</li>
+            <li>24 oz Marinara sauce</li>
+        </ul>
+        <h2>Instructions</h2>
+        <ol>
+            <li>Brown beef and mix with marinara sauce.</li>
+            <li>In a dish, layer sauce, noodles, ricotta, and mozzarella. Repeat 3 times.</li>
+            <li>Cover with foil and bake at 375°F for 25 mins.</li>
+            <li>Uncover and bake 15 mins more until bubbling.</li>
+        </ol>
+    </div>
+</body>
+</html>

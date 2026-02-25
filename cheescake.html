@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Oreo Cheesecake</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Oswald:wght@500&family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+    <style>
+        body { font-size: 18px; background-color: #f5f5f5; margin: 0; color: #333; font-family: 'Arial', sans-serif; display: flex; }
+        h1 { font-family: 'Dancing Script', cursive; color: #fff; border: 10px solid #212121; background-color: #424242; padding: 25px; text-align: center; font-size: 50px; }
+        h2 { font-family: 'Oswald', sans-serif; color: #fff; background: #616161; padding: 12px; text-align: center; border-radius: 50px; border: 2px solid #212121; letter-spacing: 2px; text-transform: uppercase; }
+        p { font-family: 'Playfair Display', serif; font-style: italic; text-align: center; font-size: 22px; padding: 15px 50px; color: #424242; }
+        .menu { width: 240px; background-color: #212121; position: fixed; height: 100%; box-shadow: 4px 0 15px rgba(0,0,0,0.1); overflow-y: auto; }
+        .menu ul { list-style-type: none; padding: 0; margin: 0; }
+        .category { cursor: pointer; padding: 15px 25px; display: block; color: #d4af37; font-family: 'Oswald', sans-serif; font-size: 18px; text-transform: uppercase; border-bottom: 1px solid rgba(255,255,255,0.1); }
+        .submenu { max-height: 0; overflow: hidden; transition: max-height 0.4s ease-out; background-color: rgba(0,0,0,0.2); }
+        .category-wrapper:hover .submenu { max-height: 200px; }
+        .submenu li a { display: block; color: #eee; padding: 12px 40px; text-decoration: none; font-size: 16px; transition: 0.3s; }
+        .submenu li a:hover { background-color: rgba(255,255,255,0.1); padding-left: 50px; }
+        .home-link { display: block; background-color: #000; color: white; padding: 20px; text-align: center; font-family: 'Oswald', sans-serif; text-decoration: none; text-transform: uppercase; }
+        .content { margin-left: 260px; padding: 50px; }
+        .centered-img { width: 450px; border: 10px solid #424242; border-radius: 20px; display: block; margin: 30px auto; }
+        .ingredients-list { list-style: none; padding: 0; }
+        .ingredients-list li { padding: 8px 0; border-bottom: 1px solid #ccc; }
+        .ingredients-list li::before { content: "\1F36A  "; margin-right: 12px; }
+    </style>
+</head>
+<body>
+    <nav class="menu">
+        <a href="Index.html" class="home-link">Home</a>
+        <ul>
+            <li class="category-wrapper"><span class="category">Beverages</span><ul class="submenu"><li><a href="Margarita.html">Margarita</a></li><li><a href="strawberry.html">Strawberry Colada</a></li></ul></li>
+            <li class="category-wrapper"><span class="category">Main Dishes</span><ul class="submenu"><li><a href="pasta.html">Shrimp Alfredo</a></li><li><a href="lasagna.html">Lasagna</a></li></ul></li>
+            <li class="category-wrapper"><span class="category">Desserts</span><ul class="submenu"><li><a href="cheescake.html">Oreo Cheesecake</a></li><li><a href="cake.html">Tres Leches</a></li></ul></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <h1>Oreo Dream Cheesecake</h1>
+        <p>A silky cream cheese base speckled with chunks of dark cocoa cookies on a crunchy Oreo crust.</p>
+        <img src="Cheesecake.jpg" class="centered-img">
+        <h2>Ingredients</h2>
+        <ul class="ingredients-list">
+            <li>24 Oreo cookies (crushed for crust)</li>
+            <li>4 tbsp Melted butter</li>
+            <li>24 oz Softened cream cheese</li>
+            <li>1 cup Sugar</li>
+            <li>12 Oreos (chopped for filling)</li>
+        </ul>
+        <h2>Instructions</h2>
+        <ol>
+            <li>Press Oreo crumbs and butter into a pan; bake 10 mins at 325°F.</li>
+            <li>Beat cream cheese and sugar; fold in chopped Oreos.</li>
+            <li>Pour into crust and bake 55 mins.</li>
+            <li>Chill for 8 hours before serving.</li>
+        </ol>
+    </div>
+</body>
+</html>
